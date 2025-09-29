@@ -1,22 +1,47 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Layout 9</title>
-    <link rel="stylesheet" href="../style.css">
-    <style>
-      /* Doe hier jouw ding! */
-    </style>
-  </head>
-  <body id="basic-layout-9">
-    <header><h1>Basic Layout 9</h1></header>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Over ons</a>
-      <a href="#">Contact</a>
-    </nav>
-    <main><a href="../index.html">Terug naar het overzicht</a></main>
-    <footer></footer>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Layout 9</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    /* Doe hier jouw ding! */
+    body {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 1em;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+    }
+
+    main {
+      grid-column: span 2;
+    }
+
+    footer {
+      grid-column: span 2;
+    }
+  </style>
+</head>
+
+<body id="basic-layout-9">
+  <header>
+    <h1>Basic Layout 9</h1>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Over ons</a>
+    <a href="#">Contact</a>
+  </nav>
+  <main><a href="../index.html">Terug naar het overzicht</a></main>
+  <footer></footer>
+</body>
+
 </html>
